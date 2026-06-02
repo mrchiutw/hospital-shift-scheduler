@@ -1,8 +1,10 @@
 # Hospital Shift Scheduler
 
-Static browser-based tool for drafting monthly hospital duty rosters with pre-leave planning, shift-avoid rules, printable output, and CSV export.
+Static browser-based tool for drafting monthly hospital duty rosters with pre-leave planning, shift-avoid rules, printable output, and CSV export. An example from Taiwanese hospital.
 
-醫療排班工作流程工具，適合住院醫師、總醫師或科內行政快速產生月班表草稿，先完成初步平均分配，再進行人工微調。
+醫療排班工作流程工具，適合醫學生排夜間學習排程，也可調整成適合住院醫師、總醫師或科內行政快速產生月班表草稿。先完成初步平均分配，再進行人工微調。
+
+過去醫院醫學生排班夜間學習時，總是讓負責排班的同學傷透腦筋，採用這個開源網頁後，先初步幫大家安排，再依需要調整。也有將此計畫給醫院老師看，老師表示考慮納入急診醫學部班表安排流程。
 
 ## Screenshots
 
