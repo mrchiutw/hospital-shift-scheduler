@@ -62,8 +62,8 @@ Static browser-based tool for drafting monthly hospital duty rosters with pre-le
 ## Demo
 
 - 主要 demo 檔案：[`docs/index.html`](docs/index.html)
-- 建議以 GitHub Pages 將 `docs/` 對外發布
-- 發布後可將 repo homepage 指向：`https://mrchiutw.github.io/<repo-name>/`
+- GitHub Pages demo：`https://mrchiutw.github.io/hospital-shift-scheduler/`
+- repo homepage 已指向目前公開 demo
 
 ## Project Structure
 
@@ -79,6 +79,7 @@ Reference/           早期原型與歷史輸出
 2. 輸入科別、月份與醫師人數
 3. 視需要設定預假與避排規則
 4. 產生班表後列印或匯出 CSV
+5. 若要展示範例，可使用 `?demo=1&dept=內科&month=6&doctors=10`
 
 ## Maintenance Direction
 

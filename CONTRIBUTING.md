@@ -41,6 +41,17 @@
 6. 可列印
 7. 可匯出 CSV
 
+## Release 與維護節奏
+
+若這次變更會影響公開展示、申請資料或評審第一印象，建議一起檢查：
+
+1. `README.md` 的功能描述、截圖與 demo 連結是否仍然正確
+2. `docs/index.html` 是否能直接在瀏覽器中開啟並完成主要流程
+3. `CHANGELOG.md` 是否需要補上這次的維護重點
+4. 若要對外發布，再建立新的 GitHub release 或更新 release notes
+
+若只做小修，保持 commit 範圍聚焦即可，不需要把 unrelated draft 或未使用資產一起混進去。
+
 ## Pull Request 建議
 
 - 保持變更範圍聚焦

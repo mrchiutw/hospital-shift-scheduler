@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Fixed
+
+- CSV export now keeps the weekday column aligned with the schedule that was actually generated, even if the month input changes afterward
+
+### Changed
+
+- Added release and maintenance checklist notes to `CONTRIBUTING.md`
+- Updated `README.md` with the live GitHub Pages demo URL and a demo preset example
+
 ## [0.1.0] - 2026-06-02
 
 ### Added

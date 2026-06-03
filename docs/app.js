@@ -14,6 +14,7 @@ let globalScheduleData = [];
 let globalTitle = "";
 let globalDoctors = [];
 let globalStats = [];
+let globalScheduleMeta = null;
 let preLeaveMatrix = [];
 let modalPreLeaveMatrix = [];
 let activePreLeaveContext = null;
@@ -798,6 +799,12 @@ function generateSchedule() {
     globalScheduleData = schedule;
     globalDoctors = getDoctorList(doctorCount);
     globalStats = stats;
+    globalScheduleMeta = {
+        dept,
+        month,
+        year: getCurrentYear(),
+        doctorCount
+    };
 
     renderScheduleTable(schedule, doctorCount, month, getCurrentYear());
     renderStatsTable(stats);
@@ -809,11 +816,14 @@ function exportToCSV() {
         return;
     }
 
+    const exportMonth = globalScheduleMeta?.month ?? getValidMonthValue();
+    const exportYear = globalScheduleMeta?.year ?? getCurrentYear();
+
     let csvContent = "\uFEFF";
     csvContent += "日期,星期," + globalDoctors.join(",") + "\n";
 
     globalScheduleData.forEach((row, index) => {
-        const dateObj = new Date(getCurrentYear(), getValidMonthValue() - 1, index + 1);
+        const dateObj = new Date(exportYear, exportMonth - 1, index + 1);
         const weekday = WEEKDAY_LABELS[dateObj.getDay()];
         const scheduleText = row.map((shiftKey) => SHIFT_BY_KEY[shiftKey]?.label ?? "休");
         csvContent += `${index + 1},${weekday},${scheduleText.join(",")}\n`;
