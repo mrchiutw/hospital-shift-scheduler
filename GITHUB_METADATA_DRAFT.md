@@ -1,10 +1,10 @@
-# GitHub Metadata Draft
+# Repository Metadata Notes
 
-## 建議 repo 名稱
+## Suggested repo name
 
 - `hospital-shift-scheduler`
 
-備選：
+Alternatives:
 
 - `doctor-duty-roster`
 - `clinical-shift-scheduler`
@@ -37,4 +37,4 @@ Static browser-based hospital shift scheduler for monthly doctor roster drafting
 
 ## GitHub profile pin 建議
 
-將此 repo pin 到個人 profile，讓 reviewer 點進 `mrchiutw` 時能第一眼看到它是目前主力維護專案之一。
+若這是目前持續維護的專案，可考慮 pin 到個人 profile，方便訪客快速找到。
