@@ -17,22 +17,21 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Root `README.md` with public-facing project overview and clinical workflow framing
+- Root `README.md` with project overview and clinical workflow framing
 - MIT `LICENSE`
 - `CONTRIBUTING.md`
 - GitHub issue templates and pull request template
-- Codex for OSS application draft notes
 
 ### Changed
 
 - Refreshed `docs/` demo into a UTF-8 static application with:
-  - clean public copy
+  - clean interface copy
   - pre-leave planner
   - avoid-shift rules
   - printable schedule output
   - CSV export
   - workload summary table
-- Clarified repo structure and public demo positioning for GitHub Pages deployment
+- Clarified repo structure and demo deployment notes for GitHub Pages
 
 ### Historical project capabilities now documented
 
