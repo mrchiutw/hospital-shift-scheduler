@@ -1,6 +1,6 @@
 ---
 name: Documentation update
-about: 補充 README、教學、維護流程或申請素材
+about: 補充 README、教學或維護流程
 title: "[docs] "
 labels: documentation
 assignees: ""
