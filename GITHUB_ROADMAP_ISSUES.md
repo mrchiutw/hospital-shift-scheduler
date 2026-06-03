@@ -1,6 +1,6 @@
-# GitHub Roadmap Issue Drafts
+# GitHub Roadmap Issue Notes
 
-以下 issue 草稿可直接建立在 GitHub 上。
+以下條目可直接整理成 GitHub issue。
 
 ---
 
