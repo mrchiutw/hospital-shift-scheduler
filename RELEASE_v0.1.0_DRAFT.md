@@ -2,8 +2,8 @@
 
 ## Highlights
 
-- Refreshed the public demo into a clean UTF-8 static interface
-- Added a root README with reviewer-facing project context
+- Refreshed the demo into a clean UTF-8 static interface
+- Added a root README with clearer project context
 - Added MIT license, contribution guide, changelog, and GitHub templates
 - Clarified the project as a clinical scheduling workflow tool rather than a generic HTML demo
 
@@ -18,4 +18,4 @@
 
 ## Notes
 
-This release focuses on public OSS presentation and maintainability rather than adding new scheduling rules. It is intended to make the repository easier to review, understand, and maintain.
+This release focuses on documentation clarity and maintainability while keeping the existing scheduling workflow intact.
