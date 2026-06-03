@@ -57,7 +57,7 @@ Static browser-based tool for drafting monthly hospital duty rosters with pre-le
 - 多名醫師輪值的初版安排
 - 月排班前的候選班表建立與人工微調前處理
 
-目前公開敘事採保守描述：強調真實工作流程價值，不宣稱未經驗證的下載量、採用數字或外部部署規模。
+專案描述以可驗證的功能與實際使用情境為主。
 
 ## Demo
 
@@ -90,4 +90,4 @@ Reference/           早期原型與歷史輸出
 - 排班限制規則細化
 - 輸出格式與手動調整流程優化
 
-如果你正在評估這個專案是否適合醫療排班情境，歡迎先從 issue 區的 roadmap 開始看起。
+目前開發方向可從 issue 區的 roadmap 追蹤。
