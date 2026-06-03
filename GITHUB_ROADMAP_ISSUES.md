@@ -4,22 +4,22 @@
 
 ---
 
-## 1. [docs] Improve public README for OSS reviewers
+## 1. [docs] Improve README clarity and onboarding
 
 ### Body
 
-The public README now has a stronger project narrative, but it can still be improved for first-time reviewers.
+The README already covers the core workflow, but it can still better guide first-time users through the tool and its current assumptions.
 
 Scope:
 
-- tighten the English summary for OSS reviewers
+- tighten the English summary for first-time users
 - add a clearer demo / deployment note
 - document current scheduling assumptions and non-goals
 - keep all claims conservative and verifiable
 
 Why:
 
-This repository is intended to be legible to both clinical users and external OSS reviewers.
+This repository should be easy to understand for both clinical users and developers.
 
 Labels:
 
@@ -31,7 +31,7 @@ Labels:
 
 ### Body
 
-We refreshed the public demo and root documentation, but UTF-8 rendering still needs verification across environments.
+We refreshed the demo and root documentation, but UTF-8 rendering still needs verification across environments.
 
 Scope:
 
@@ -94,7 +94,7 @@ Labels:
 
 ### Body
 
-This repository now has the core public OSS files, but the release and maintenance workflow should be written down more explicitly.
+This repository now has the core docs in place, but the release and maintenance workflow should be written down more explicitly.
 
 Scope:
 
