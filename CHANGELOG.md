@@ -6,10 +6,13 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+- Clearing pre-leave selections in the modal no longer overwrites saved data unless the user clicks Save
 - CSV export now keeps the weekday column aligned with the schedule that was actually generated, even if the month input changes afterward
 
 ### Changed
 
+- Updated the pre-leave modal copy to make Save and Cancel behavior explicit
+- Added a regression check for pre-leave cancel behavior to `CONTRIBUTING.md`
 - Added release and maintenance checklist notes to `CONTRIBUTING.md`
 - Updated `README.md` with the live GitHub Pages demo URL and a demo preset example
 

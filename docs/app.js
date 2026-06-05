@@ -465,12 +465,10 @@ function clearPreLeaveMatrix() {
         return;
     }
 
-    preLeaveMatrix = createEmptyPreLeaveMatrix(
+    modalPreLeaveMatrix = createEmptyPreLeaveMatrix(
         activePreLeaveContext.daysInMonth,
         activePreLeaveContext.doctorCount
     );
-    modalPreLeaveMatrix = clonePreLeaveMatrix(preLeaveMatrix);
-    savePreLeaveMatrix(activePreLeaveContext);
     renderPreLeaveGrid();
 }
 
