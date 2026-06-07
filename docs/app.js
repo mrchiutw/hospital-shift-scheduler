@@ -598,6 +598,36 @@ function getScheduleTitle(dept, year, month) {
     return `${deptLabel} ${year}年${month}月醫師排班表`;
 }
 
+function resetGeneratedOutput(message = "設定月份與醫師人數後即可產生班表。") {
+    globalScheduleData = [];
+    globalTitle = "";
+    globalDoctors = [];
+    globalStats = [];
+    globalScheduleMeta = null;
+
+    const resultTitle = document.getElementById("resultTitle");
+    const tableContainer = document.getElementById("tableContainer");
+    const statsContainer = document.getElementById("statsContainer");
+    const statsTable = document.getElementById("statsTable");
+
+    if (resultTitle) {
+        resultTitle.innerText = "尚未產生班表";
+    }
+
+    if (tableContainer) {
+        tableContainer.classList.add("empty-state");
+        tableContainer.textContent = message;
+    }
+
+    if (statsTable) {
+        statsTable.innerHTML = "";
+    }
+
+    if (statsContainer) {
+        statsContainer.hidden = true;
+    }
+}
+
 function renderScheduleTable(schedule, doctorCount, month, year) {
     let html = "<table><thead><tr><th>日期</th><th>星期</th>";
     globalDoctors.forEach((doctor) => {
@@ -625,7 +655,9 @@ function renderScheduleTable(schedule, doctorCount, month, year) {
     }
 
     html += "</tbody></table>";
-    document.getElementById("tableContainer").innerHTML = html;
+    const tableContainer = document.getElementById("tableContainer");
+    tableContainer.classList.remove("empty-state");
+    tableContainer.innerHTML = html;
 }
 
 function renderStatsTable(stats) {
@@ -790,6 +822,7 @@ function generateSchedule() {
     }
 
     if (!isSuccess) {
+        resetGeneratedOutput("目前條件下無法產生班表，請調整條件後再試一次。");
         alert("目前條件下無法產生符合規則的班表，請調整醫師人數、預假或避排規則後再試一次。");
         return;
     }

@@ -51,7 +51,7 @@ Static browser-based tool for drafting monthly hospital duty rosters with pre-le
 
 ## Project Positioning
 
-這是一個從臨床排班情境衍生的開源工具，用於：
+這是一個從臨床排班情境衍生的瀏覽器工具，用於：
 
 - 科內排班草稿產生
 - 多名醫師輪值的初版安排
@@ -82,6 +82,7 @@ Reference/           早期原型與歷史輸出
 5. 若要展示範例，可使用 `?demo=1&dept=內科&month=6&doctors=10`
 
 若在預假視窗中按下取消，原本已儲存的資料會保留不變。
+若目前條件無法排出可用班表，畫面會清除舊結果並提示重新調整條件。
 
 ## Maintenance Direction
 
