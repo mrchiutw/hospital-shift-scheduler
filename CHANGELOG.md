@@ -6,12 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+- Invalid month or doctor-count input now clears stale output before prompting the user to correct the fields
 - Failed schedule attempts now clear stale output instead of leaving the previous result visible
 - Clearing pre-leave selections in the modal no longer overwrites saved data unless the user clicks Save
 - CSV export now keeps the weekday column aligned with the schedule that was actually generated, even if the month input changes afterward
 
 ### Changed
 
+- Added a regression check for invalid input handling to `CONTRIBUTING.md`
 - Added a regression check for failed schedule attempts to `CONTRIBUTING.md`
 - Updated the pre-leave modal copy to make Save and Cancel behavior explicit
 - Added a regression check for pre-leave cancel behavior to `CONTRIBUTING.md`

@@ -693,22 +693,26 @@ function generateSchedule() {
     const avoidRuleMap = buildAvoidRuleMap(avoidRules, doctorCount);
 
     if (!monthVal || Number.isNaN(Number(monthVal))) {
+        resetGeneratedOutput("請先輸入有效月份與醫師人數，再重新產生班表。");
         alert("請輸入 1 到 12 的月份。");
         return;
     }
 
     if (Number.isNaN(doctorCount)) {
+        resetGeneratedOutput("請先輸入有效月份與醫師人數，再重新產生班表。");
         alert("請輸入 3 到 80 之間的醫師人數。");
         return;
     }
 
     if (doctorCount < 3) {
+        resetGeneratedOutput("至少需要 3 位醫師才能產生班表。");
         alert("至少需要 3 位醫師才能分配白班、小夜與大夜。");
         return;
     }
 
     const month = Number.parseInt(monthVal, 10);
     if (month < 1 || month > 12) {
+        resetGeneratedOutput("月份需介於 1 到 12，請修正後再試一次。");
         alert("月份必須介於 1 到 12。");
         return;
     }
